@@ -1,0 +1,48 @@
+vector-coll#files-menu {
+	display: flex;
+	padding: 11px;
+	width: max-content;
+	height: max-content;
+	align-items: center;
+	justify-self: center;
+
+	background: var(--bg-clr-0);
+	backdrop-filter: blur(16px) saturate(180%);
+	border-radius: 1px;
+	margin-top: 11px;
+
+	&.column {
+		flex-direction: column;
+	}
+
+	&.row {
+		flex-direction: row
+	}
+
+	& jar-vessel.sep-text-jar {
+		width: 18px !important;
+	}
+
+	& jar-vessel:has(svg, span) {
+		display: flex;
+		justify-content: center;
+		background: none;
+		border: none;
+		margin: 0 4px;
+		width: 19px;
+		/* height: 2vh; */
+
+		& svg {
+			color: var(--icon-hl-clr);
+			stroke: antiquewhite;
+			fill: var(--hl-clr);
+		}
+
+		& span {
+			background: var(--hl-clr);
+			border-radius: 1px;
+			height: 32px;
+			width: 1px;
+		}
+	}
+}

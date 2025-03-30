@@ -1,0 +1,11 @@
+@import "files-tree.css";
+@import "files-meta.css";
+@import "files-menu.css";
+
+.pointer {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}

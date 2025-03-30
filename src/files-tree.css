@@ -1,0 +1,25 @@
+tree-coll#files-tree {
+	display: flex;
+	flex-direction: column;
+
+	jar-vessel {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.node-jar {
+		.node-name {
+			background: var(--bg-clr-0);
+			padding: 10px;
+		}
+
+		.node-children {
+			background: var(--bg-clr-1);
+			padding: 19px;
+		}
+
+		.node-content {
+			padding: 7px;
+		}
+	}
+}

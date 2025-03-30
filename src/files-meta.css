@@ -1,0 +1,24 @@
+matrix-coll#files-meta {
+	--meta-rows: 0;
+	--meta-cols: 0;
+
+	background: var(--bg-clr-0);
+
+	display: flex;
+	flex-direction: column;
+
+	.matrix-cols {
+		display: grid;
+		grid-template-columns: repeat(var(--meta-cols), 1fr);
+
+		&>span {
+			padding-right: 20px;
+		}
+	}
+
+	.matrix-rows {
+		display: grid;
+		grid-template-columns: repeat(var(--meta-cols), 1fr);
+		grid-template-rows: repeat(var(--meta-rows), 1fr)
+	}
+}
